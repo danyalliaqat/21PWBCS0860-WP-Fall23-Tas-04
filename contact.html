@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Contact</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Josefins Sans',sans-serif;
+            box-sizing: border-box;
+        }
+        .navbar img {
+            width: 100px;
+            height: auto;
+            background-color: 111111;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-right: 100px; */
+            background-color: #111111;
+            color: white;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .navbar{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .pages{
+            display: flex;
+            justify-content: space-between;
+            /* width: auto; */
+        }
+        .pages a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin: 0 15px;
+        }
+        .pages a:hover{
+            color: #fea116;
+            transition: .4s;
+        }
+        #hom{
+            color: #fea116;
+        }
+        .btn{
+            background-color: #fea116;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 100px;
+        }
+        .btn:hover{
+            background-color: #fa9805;
+        }
+        span{
+            color: #fea116;
+        }
+        .home img{
+            width: 100%;
+        }
+        .pic1{
+            width: 30%;
+        }
+        .pic2{
+            width: 30%;
+        }
+        .pics{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .rounded-image{
+            border-radius: 15px;
+        }
+        .cap1{
+            width: 30%;
+            background-color: #fea116;
+            color: #111111;
+        }
+        .cap2{
+            width: 30%;
+            background-color: #fea116;
+            color: #111111;
+        }
+        .cap{
+            display: flex;
+            justify-content: space-evenly;
+            color: #111111;
+            align-items: center;
+            
+        }
+        .contain{
+            background-color: #111111;
+            color: aliceblue;
+            width: 99.0%;
+            margin-left: 1.5px;
+        }
+        .head{
+            width: 100%;
+            background-color: #111111;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #651b1b;
+            padding: 20px;
+        }
+
+        .cont {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #875656;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social a{
+            margin-top: 10px;
+            color: white;
+            font-size: 80px;
+        }
+
+        .footer .info {
+            font-size: 14px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="container">
+        <div class="navbar">
+            <img src="./img/rest logo.jpg" alt="logo">
+            <h2>Flavour<span>Fusion</span></h2>
+        </div>
+        <div class="pages">
+            <a id="hom" href="index.html">Home</a>
+            <a href="hero.html">Hero</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="btn">Order Now</button>
+    </div>
+    </header>
+    <!-- contact form  -->
+    <div class="cont">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- footer section  -->
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/koko.daniel.3344?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@daniliaqat3532" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/danyal-liaqat-49806425b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/daniliaqat/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <br>
+        <div class="info">
+            <p>Madina Colony Kohat Road Peshawar</p>
+            <p>Phone: 0317-1652105</p>
+            <p>Email: daniliaqat80@gmail.com</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
